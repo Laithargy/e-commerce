@@ -1,0 +1,27 @@
+:root {
+    /* --red: */
+    /* --green:; */
+    /* font-family: */
+    --white : #fff;
+}
+
+*::selection {
+    /* background-color: */
+    color: var(--white);
+}
+
+body {
+
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+main {
+    
+}

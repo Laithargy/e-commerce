@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/45f2d2297997d33ef4b19cab7128c22f.jpg);
+}
+.model-rolex{
+    text-align: center;
+}
+.model-rolex1{
+    text-align: center;
+}
+.element-1{
+    position: relative;
+    margin-left: 40px;
+    padding: auto;
+
+}
+.element-2{
+    position: relative;
+    margin-left: 240px;
+    padding: auto;
+    margin-top: -185px;
+
+}
+.element-3{
+    position: relative;
+    margin-left: 215px;
+    padding: auto;
+    margin-top: -185px;
+}
+
+.element-4{
+    position: relative;
+    margin-left: 420px;
+    padding: auto;
+    margin-top: -185px;
+}
+.element-5{
+    position: relative;
+    margin-left: 610px;
+    padding: auto;
+    margin-top: -185px;
+}
+.element-6{
+    position: relative;
+    margin-left: 800px;
+    padding: auto;
+    margin-top: -185px;
+}
+.element-7{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-7{
+    margin-left: 25px;
+    color: white;
+}
+.elem-7{
+    margin-left: 117px;
+}
+.element-8{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-8{
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+}
+.elem-8{
+    margin-left: 117px;
+}
+.element-9{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-9{
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+}
+.elem-9{
+    margin-left: 117px;
+}
+.element-10{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-10{
+    margin-left: -9px;
+    color: rgb(0, 0, 0);
+}
+.elem-10{
+    margin-left: 117px;
+}
+.element-11{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-11{
+    margin-left: 42px;
+    color: rgb(255, 255, 255);
+}
+.elem-11{
+    margin-left: 117px;
+}
+.element-12{
+    position: relative;
+    margin-left: 200px;
+    padding: auto;
+    margin-top: 100px;
+}
+.ele-12{
+    margin-left: 34px;
+    color: rgb(0, 0, 0);
+}
+.elem-12{
+    margin-left: 117px;
+}
+

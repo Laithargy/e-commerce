@@ -54,4 +54,8 @@ h1 {
     font-size: 4ex;
 }
 
+.menuHamburger {
+    display : none;
+}
+
 /* FOOTER */

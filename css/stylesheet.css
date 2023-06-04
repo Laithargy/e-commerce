@@ -2,65 +2,134 @@
 /* GENERAL */
 
 :root {
-    /* --red: */
-    /* --green:; */
-    /* font-family: */
+    --medium-green : #2C5B1C;
+    --black : #000;
     --white : #fff;
+    --purple : #2C1E53;
+    --blue : #232C7A;
+    --gold : #79602F;
+    --carbon : #2F2D28;
+    --cream : #D9D9D9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition:all .2s linear;
 }
 
 *::selection {
-    background-color: red;
-    color: var(--white);
+    background: var(--medium-green);
+    color: var(--cream);
 }
 
 html {
-
-}
-
-html body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-body {
-
-}
-
-header {
-    padding-bottom: 1ex;
-}
-
-footer {
-    padding : 3ex;
-    background-color: blueviolet;
-}
-
-main {
-    
+    overflow-x: hidden; 
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
-h1 {
-    font-size: 2emx;
+body, html {
+    margin: 0;
+    padding: 0;
+}
+  
+
+header {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    top:0; right:0; left:0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+    font-size: 3ex;
+    background: url('https://i.pinimg.com/originals/94/23/57/942357cf7926b71d9e8d627c316a854c.jpg');
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    font-size: 2ex;
+    padding: 1ex;
+    text-align: center;
+    /* display: inline-block ; */
+    /* position: relative; */
+    /* left: 0; right:0; */
+    background: var(--gold);
+    justify-content: space-evenly;
+}
+
+main {
+    padding-top: 20ex;
 }
 
 /* NAVBAR */
-
-.menuList a {
-    font-size: 4ex;
-}
-
-.menuHamburger {
-    display : none;
-}
-
 .navbar {
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
+
 }
+
+header img {
+    height: 10ex;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.navbar a {
+    font-size: 3ex;
+    margin-left: 3ex;
+}
+
+/* HAMBURGER */
+#hamburger {
+    display: none;
+    font-size: 3.5ex;
+}
+
+
 /* FOOTER */
+
+footer img {
+    height: 3ex;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.copyrights {
+    font-size: 1ex;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width:900px) {
+
+    header img {
+        height: 4ex;
+        width: auto;
+        mix-blend-mode: multiply;
+    }
+
+    #hamburger {
+        display: initial;
+    }
+
+    .navbar {
+        flex-direction: column;
+        background: var(--carbon);
+        color: var(--white);
+        position: absolute;
+        top:100%; right:0; left:0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}

@@ -37,22 +37,19 @@ body, html {
     margin: 0;
     padding: 0;
 }
-  
 
 header {
-    z-index: 1000;
-    display: flex;
-    position: fixed;
-    top:0; right:0; left:0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 9%;
-
-    font-size: 3ex;
+    top: 0; right: 0; left: 0;
     background: url('https://i.pinimg.com/originals/94/23/57/942357cf7926b71d9e8d627c316a854c.jpg');
     background-position: center 75%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding : 2rem 5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -66,70 +63,16 @@ footer {
     justify-content: space-evenly;
 }
 
-main {
-    padding-top: 20ex;
-}
-
-/* NAVBAR */
-.navbar {
-    justify-content: space-evenly;
-
-}
-
-header img {
-    height: 10ex;
-    width: auto;
-    mix-blend-mode: multiply;
-}
-
-.navbar a {
-    font-size: 3ex;
-    margin-left: 3ex;
-}
-
-/* HAMBURGER */
-#hamburger {
-    display: none;
-    font-size: 3.5ex;
-}
-
-
-/* FOOTER */
-
 footer img {
-    height: 3ex;
+    height: 4ex;
     width: auto;
     mix-blend-mode: multiply;
 }
 
-.copyrights {
-    font-size: 1ex;
+.copyrights p{
+    font-size: 3ex;
 }
 
-
-/* MEDIA QUERY */
-@media (max-width:900px) {
-
-    header img {
-        height: 4ex;
-        width: auto;
-        mix-blend-mode: multiply;
-    }
-
-    #hamburger {
-        display: initial;
-    }
-
-    .navbar {
-        flex-direction: column;
-        background: var(--carbon);
-        color: var(--white);
-        position: absolute;
-        top:100%; right:0; left:0;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    
-    .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+.brand a {
+    font-size: 3ex;
 }

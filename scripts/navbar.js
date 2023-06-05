@@ -1,12 +1,19 @@
 
 let menu = document.querySelector('#hamburger');
 let navbar = document.querySelector('.navbar');
+let header = document.querySelector('#navbar');
 
 menu.onclick = () => {
-    console.log("PP");
     navbar.classList.toggle('active');
+    console.log("WORK");
 }
 
 window.onscroll = () =>{
     navbar.classList.remove('active');
+    if (window.pageYOffset > 0){
+        header.classList.add('sticky');
+    }
+    else {
+        header.classList.remove('sticky');
+    }
 }

@@ -1,18 +1,14 @@
 
 let menu = document.querySelector('.hamburger');
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.menuList');
 
 menu.onclick = () => {
     navbar.classList.toggle('active');
-    console.log("WORK");
 }
 
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-    if (window.pageYOffset > 0){
-        header.classList.add('sticky');
-    }
-    else {
-        header.classList.remove('sticky');
-    }
+let subMenu = document.querySelector('.subMenu');
+let subMenuList = document.querySelector('.subMenuList');
+
+subMenu.onclick = () => {
+    subMenuList.classList.toggle('active');
 }

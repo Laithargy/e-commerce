@@ -41,10 +41,10 @@ body, html {
 header {
     top: 0; right: 0; left: 0;
     background: url('https://i.pinimg.com/originals/94/23/57/942357cf7926b71d9e8d627c316a854c.jpg');
-    background-position : center 75%;
+    background-position : center 80%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding : 2rem 5%;
+    padding : 2rem 9%;
 }
 
 body {
@@ -58,7 +58,7 @@ footer {
     padding: 1ex;
     text-align: center;
     background: var(--gold);
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
@@ -76,7 +76,16 @@ footer .copyrights p{
     font-size: 3ex;
 }
 
+
+/* NAVBAR */
+
+.navbar a {
+    font-size: 3ex;
+}
+
+
 .navbar .hamburger {
+    font-size: 1.5em;
     display: none;
 }
 
@@ -85,12 +94,11 @@ footer .copyrights p{
     font-size: 3ex;
     overflow: hidden;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .navbar .panier svg{
-    align-items:inherit;
-
+    align-items:center;
 }
 
 .navbar ul{
@@ -108,10 +116,64 @@ footer .copyrights p{
     padding-left: .5em;
 }
 
-/* MEDIA QUERY */
+.navbar li a {
+    font-size: 3ex;
+    display: block;
+}
+
+.subMenuList {
+    display: none;
+    position: relative;
+    z-index: 100000;
+}
+
+.subMenuList a {
+    background-color: var(--white);
+    padding: 0.5ex;
+    color: var(--carbon);
+    text-align: left;
+}
+
+.subMenu:hover .subMenuList{
+    position: absolute;
+    display: block;
+    z-index: 1000;
+}
+
+/* MEDIA QUERY FOR NAVBAR*/
 
 @media (max-width: 900px) {
+
+    .navbar .panier svg{
+        font-size: 1em;
+    }
     .navbar .hamburger {
         display: initial;
+    }
+
+    .navbar img {
+        height: 2em;
+        width: auto;
+    }
+
+    .navbar .menuList {
+        background-color: var(--white);
+        padding: 3ex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        top: 10%; right: 0; left: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar .menuList.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .subMenuList a{
+        font-size: 1em;
+    }
+    .subMenuList.active {
+        display: block;
     }
 }

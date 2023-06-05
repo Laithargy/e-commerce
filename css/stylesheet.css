@@ -41,7 +41,7 @@ body, html {
 header {
     top: 0; right: 0; left: 0;
     background: url('https://i.pinimg.com/originals/94/23/57/942357cf7926b71d9e8d627c316a854c.jpg');
-    background-position: center 75%;
+    background-position : center 75%;
     background-repeat: no-repeat;
     background-size: cover;
     padding : 2rem 5%;
@@ -52,16 +52,15 @@ body {
     flex-direction: column;
 }
 
+/* FOOTER */
 footer {
     font-size: 2ex;
     padding: 1ex;
     text-align: center;
-    /* display: inline-block ; */
-    /* position: relative; */
-    /* left: 0; right:0; */
     background: var(--gold);
     justify-content: space-evenly;
 }
+
 
 footer img {
     height: 4ex;
@@ -69,10 +68,50 @@ footer img {
     mix-blend-mode: multiply;
 }
 
-.copyrights p{
-    font-size: 3ex;
+footer .copyrights p{
+    font-size: 0.5em;
 }
 
 .brand a {
     font-size: 3ex;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    font-size: 3ex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .panier svg{
+    align-items:inherit;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar img {
+    height: 5ex;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.navbar ul li {
+    padding-left: .5em;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 900px) {
+    .navbar .hamburger {
+        display: initial;
+    }
 }

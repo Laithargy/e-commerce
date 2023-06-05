@@ -1,7 +1,6 @@
 
-let menu = document.querySelector('#hamburger');
+let menu = document.querySelector('.hamburger');
 let navbar = document.querySelector('.navbar');
-let header = document.querySelector('#navbar');
 
 menu.onclick = () => {
     navbar.classList.toggle('active');

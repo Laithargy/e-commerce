@@ -1,0 +1,20 @@
+.banner-homepage {
+    background-image: url('../img/uaHKzJq.jpg');
+    top: 0; right: 0; left: 0;
+    background-size: cover;
+    background-position: center;
+    padding: 10em;
+}
+
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+
+    .hero-btn {
+    position: relative;
+    font-size: 3em;
+    background-color: var(--carbon);
+    color : var(--white);
+    }
+}

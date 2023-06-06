@@ -59,35 +59,30 @@ footer {
     text-align: center;
     background: var(--gold);
     justify-content: space-between;
+
+    .brand {
+        .footerIcon {
+            font-size: 3ex;
+        }
+    }
+
+    .footerLogo {
+        height: 4ex;
+        width: auto;
+        mix-blend-mode: multiply;
+    }
+
+    .copyrights {
+        .references {
+            font-size: 0.5em;
+        }
+
+    }
 }
 
-
-footer img {
-    height: 4ex;
-    width: auto;
-    mix-blend-mode: multiply;
-}
-
-footer .copyrights p{
-    font-size: 0.5em;
-}
-
-.brand a {
-    font-size: 3ex;
-}
 
 
 /* NAVBAR */
-
-.navbar a {
-    font-size: 3ex;
-}
-
-
-.navbar .hamburger {
-    font-size: 1.5em;
-    display: none;
-}
 
 .navbar {
     display: flex;
@@ -95,9 +90,19 @@ footer .copyrights p{
     overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
+
+    .hamburger {
+        font-size: 1.5em;
+        display: none;
+    }
+
+    a {
+        font-size: 3ex;
+    }
 }
 
-.navbar .panier svg{
+.navbar svg{
+    font-size: 1.5em;
     align-items:center;
 }
 
@@ -107,7 +112,7 @@ footer .copyrights p{
 }
 
 .navbar img {
-    height: 5ex;
+    height: 5em;
     width: auto;
     mix-blend-mode: multiply;
 }
@@ -125,13 +130,14 @@ footer .copyrights p{
     display: none;
     position: relative;
     z-index: 100000;
-}
 
-.subMenuList a {
-    background-color: var(--white);
-    padding: 0.5ex;
-    color: var(--carbon);
-    text-align: left;
+    .subStyle {
+        display: inline-block;
+        border-radius: 35%;
+        background-color: var(--white);
+        padding: 0.5ex;
+        color: var(--carbon);
+    }
 }
 
 .subMenu:hover .subMenuList{
@@ -144,15 +150,16 @@ footer .copyrights p{
 
 @media (max-width: 900px) {
 
-    .navbar .panier svg{
+    .navbar .panier svg, .hamburger{
         font-size: 1em;
     }
+
     .navbar .hamburger {
         display: initial;
     }
 
     .navbar img {
-        height: 2em;
+        height: 3em;
         width: auto;
     }
 

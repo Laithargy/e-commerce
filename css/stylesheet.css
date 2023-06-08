@@ -52,6 +52,16 @@ body {
     flex-direction: column;
 }
 
+main {
+    box-sizing: border-box;
+    background: url('../img/background_body_img.jpg');
+    background-position : center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
 /* FOOTER */
 footer {
     font-size: 2ex;

@@ -5,6 +5,7 @@ body{
 }
 .model-rolex{
     text-align: center;
+    text-decoration: underline;
 }
 .model-rolex1{
     text-align: center;
@@ -106,4 +107,210 @@ body{
 .elem-12{
     margin-left: 120px;
     margin-top: -10px;
+}
+/* Responsive */
+
+@media only screen and (max-width:500px){
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(img/45f2d2297997d33ef4b19cab7128c22f.jpg);
+    }
+
+    .model-rolex{
+        width: 100%;
+        padding-left: 370px
+        
+    }
+    .model-rolex1{
+        width: 100%;
+        padding-left: 370px;
+        
+    }
+    .element-1{
+        position: absolute;
+        width: 100%;
+        padding: 4%;
+        text-align: center;
+        margin-left: -100px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .element-2{
+        position: relative;
+        width: fit-content;
+        margin-left: 135px;
+        padding: auto;
+        margin-top: -385px;
+        text-align: center;
+    
+    }
+    .element-3{
+        position: relative;
+        width: fit-content;
+        margin-left: 770px;
+        padding: 2%;
+        margin-top: -405px;
+    }
+    .element-4{
+        position: absolute;
+        width: fit-content;
+        margin-left: -35px;
+        padding: auto;
+        margin-top: 55px;
+        text-align: center;
+ 
+    }
+    .ele-4{
+        margin-left: -20px;
+        color:white;
+    }
+    .elem-4{
+        margin-left: -27px;
+        margin-top: -10px;
+    }
+    .element-5{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 384px;
+        margin-top: 55px;
+    
+    }
+    .ele-5{
+        color: white;
+        margin-left: -23px;
+    }
+    .elem-5{
+        margin-left: -23px;
+        
+    }
+    .element-6{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 790px;
+        margin-top: 55px;
+        
+        }
+    .ele-6{
+        color: white;
+        margin-left: -35px;
+        }
+    .elem-6{
+            margin-left: -23px;
+            
+        }
+    .element-7{
+        position: absolute;
+        width: fit-content;
+        margin-left: -35px;
+        padding: auto;
+        margin-top: 520px;
+        text-align: center;
+    
+    }
+    .ele-7{
+        margin-left: -20px;
+        color:rgb(108, 22, 22);
+    }
+    .elem-7{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-8{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 384px;
+        margin-top: 520px;
+    
+    }
+    .ele-8{
+        color: rgb(0, 0, 0);
+        margin-left: -23px;
+    }
+    .elem-8{
+        margin-left: -23px;
+        
+    }
+    .element-9{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 790px;
+        margin-top: 520px;
+        
+        }
+    .ele-9{
+        color: rgb(12, 20, 88);
+        margin-left: -5px;
+        }
+    .elem-9{
+            margin-left: -23px;
+            
+    }
+    .element-10{
+        position: absolute;
+        width: fit-content;
+        margin-left: 185px;
+        padding: auto;
+        margin-top: 1000px;
+        text-align: center;
+    
+    }
+    .ele-10{
+        margin-left: -20px;
+        color:rgb(255, 255, 255);
+    }
+    .elem-10{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-11{
+        position: absolute;
+        width: fit-content;
+        margin-left: 605px;
+        padding: auto;
+        margin-top: 1000px;
+        text-align: center;
+    
+    }
+    .ele-11{
+        margin-left: -20px;
+        color:rgb(255, 255, 255);
+    }
+    .elem-11{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-12{
+        position: absolute;
+        width: fit-content;
+        margin-left: 370px;
+        padding: auto;
+        margin-top: 1460px;
+        text-align: center;
+    
+    }
+    .ele-12{
+        margin-left: -20px;
+        color:rgb(145, 22, 22);
+    }
+    .elem-12{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+            
+   
+
+   
+    
+
 }

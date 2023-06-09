@@ -42,25 +42,33 @@ header {
     top: 0; right: 0; left: 0;
     background: url('https://i.pinimg.com/originals/94/23/57/942357cf7926b71d9e8d627c316a854c.jpg');
     background-position : center 80%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     padding : 2rem 9%;
+    position: relative;
 }
 
 body {
     display: flex;
     flex-direction: column;
-}
-
-main {
+    height: 100vh;
+    width: auto;
     box-sizing: border-box;
-    background: url('../img/background_body_img.jpg');
+    background: url('../img/body-background.jpg');
     background-position : center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+main {
+    box-sizing: border-box;
+    background: url('../img/body-background.jpg');
+    background-position : center; 
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    width: 100%;
-    padding-bottom: 3em;
+    width: auto;
+    padding-bottom: 10em;
+    position: relative;
 }
 
 h1 {
@@ -88,14 +96,19 @@ p {
 }
 
 /* FOOTER */
-footer {
+
+#footerDiv {
     font-size: 2ex;
     padding: 1ex;
     text-align: center;
     background: var(--gold);
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
+
+    /* justify-content: space-between; */
+    z-index: 300;
+    bottom: 0px;
+    right: 0px; left: 0px;
+    position: fixed;
+    padding-top: 1ex;
 }
 
 .footerIcon {
@@ -108,13 +121,9 @@ footer {
     mix-blend-mode: multiply;
 }
 
-.copyrights {
-    .references {
-        font-size: 0.5em;
-    }
-
+.copyrights .references {
+    font-size: 0.5em;
 }
-
 /* NAVBAR */
 
 .navbar {
@@ -157,6 +166,10 @@ a {
 .navbar li a {
     font-size: 3ex;
     display: block;
+    /* background-color: var(--carbon);
+    color: var(--white);
+    border-radius: 5px; */
+    padding: 1em;
 }
 
 .subMenuList {
@@ -168,9 +181,9 @@ a {
 .subStyle {
     display: inline-block;
     border-radius: 35%;
-    background-color: var(--white);
+    background-color: var(--carbon);
     padding: 0.5ex;
-    color: var(--carbon);
+    color: var(--cream);
 }
 
 .subMenu:hover .subMenuList{
@@ -185,6 +198,10 @@ a {
 
     .navbar .panier svg, .hamburger{
         font-size: 1em;
+    }
+
+    .subMenu:hover .subMenuList{
+        position: relative;
     }
 
     .navbar .hamburger {
@@ -202,7 +219,7 @@ a {
         flex-direction: column;
         position: absolute;
         z-index: 10;
-        top: 10%; right: 0; left: 0;
+        top: 12ex; right: 0; left: 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 

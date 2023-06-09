@@ -1,3 +1,11 @@
+/* BANNER "FIND OUT MORE" */
+
+.bodyHome {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
 .banner-homepage {
     background-image: url('../img/uaHKzJq.jpg');
     top: 0; right: 0; left: 0;
@@ -20,6 +28,7 @@
     color : var(--white);
 }
 
+/* CAROUSEL CONTAINER */
 #container-carousel {
 
     display: flex;
@@ -29,11 +38,7 @@
     align-items: center;
     box-sizing: border-box;
     position: relative;
-    /* padding-top: 3em; */
     padding: 3em;
-
-    /* padding-left: 5%;
-    padding-right: 5%; */
     background: transparent;
 }
 
@@ -44,25 +49,32 @@
 }
 
 .slider-homepage {
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+
+    justify-content: space-evenly;
     align-items: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background: url('../img/slider_background_img.jpg');
+    background-image: url('../img/slider_background_img.jpg');
+
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
-#slideShow {
-    height: 250px;
-    width: 250px;  
+#linkSlide #slideShow {
+    background: none;
+    height: 12em;
+    width: 12em;
     border-radius: 5px;
-    background-color: #eb9100;
+    background-color: var(--gold);
     background-position: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 1;
+    background-size: cover;
+    z-index: 2;
 }
 
 #slideShow:hover {
@@ -70,13 +82,14 @@
 }
 
 #slideLeft {
-    height: 400px;
-    width: 150px;
-    opacity: 0.5;
+    background: none;
+    height: 16em;
+    width: 16em;
+    opacity: 0.8;
     border-radius: 5px;
-    transform: skewy(5deg);
+    transform: skewy(3deg);
     transform-origin: top right;
-    background-color: #eb9100;
+    background-color: var(--gold);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,36 +100,112 @@
 }
 
 #slideRight {
-    height: 400px;
-    width: 150px;
-    opacity: 0.5;
+    background: none;
+    height: 16em;
+    width: 16em;
+    opacity: 0.8;
     border-radius: 5px;
-    transform: skewy(-5deg);
+    transform: skewy(-3deg);
     transform-origin: top left;
-    background-color: #eb9100;
+    background-color: var(--gold);
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+}
   
-  #slideRight:hover {
-    opacity: 1;
-  }
+#slideRight:hover {
+    transform: scale(1.2);
+}
 
   #linkSlide { 
     cursor: pointer;
     z-index: 1;
     box-sizing: border-box;
-  }
+}
+
+.textIntro {
+    position: relative;
+    text-align: center;
+    margin: 0 10% 1% 10%;
+    display: block;
+    background: var(--cream);
+}
 
 
-  @media (max-width:900px) {
+/* DISPLAY SHOP PRODUCTS */
+.shopDisplay {
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    color: var(--cream);
+    margin: 0 5em 0 5em;
+}
+
+.shopDisplay h1{
+    background-color: var(--cream);
+    color: var(--carbon);
+    display: block;
+    padding: 1em;
+}
+
+.productsPanel {
+    background-image: url('../img/productsPanel_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.productsU {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.displayTXT {
+    padding: 0 3em 2em 3em;
+}
+
+.productsU.left .displayTXT {
+    background-color: var(--medium-green);
+}
+
+.productsU img {
+    height: 25em;
+    width: auto;
+}
+
+.displayPricing {
+    font-size: 3em;
+    background-color: var(--cream);
+    color: var(--carbon);
+}
+
+.productsU.middle .displayTXT {
+    background-color: var(--gold);
+}
+
+.productsU.right .displayTXT {
+    background-color: var(--carbon);
+}
+
+@media (max-width:900px) {
 
     .banner-homepage {
         padding: 7em;
     }
-    
+
     .hero-btn {
         font-size: 1em;
-    } 
-  }
+    }
+
+    .navButton {
+        display: initial;
+    }
+
+    #slideRight, #slideLeft {
+        display: none;
+    }
+}

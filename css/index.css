@@ -11,15 +11,14 @@
 .hero-image {
     display: flex;
     justify-content: center;
+}
 
-    .hero-btn {
+.hero-btn {
     position: relative;
     font-size: 3em;
     background-color: var(--carbon);
     color : var(--white);
     }
-}
-
 
 #container-carousel {
 
@@ -34,11 +33,11 @@
     /* padding-left: 5%;
     padding-right: 5%; */
     background: transparent;
+}
 
-    .navButton {
-        background: inherit;
-        font-size: 2em;
-    }
+.navButton {
+    background: inherit;
+    font-size: 3em;
 }
 
 .slider-homepage {
@@ -48,18 +47,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-size: cover;
     background: url('../img/slider_background_img.jpg');
 }
 
 #slideShow {
-    height: 12em;
-    width: 6em;
+    height: 300px;
+    /* max-height: auto;
+    max-width: auto; */
+    background-size: cover;
+    width: 300px;
     border-radius: 5px;
-
     z-index : 100;
-
-    &:hover {
-        transform: scale(1.2);
-    }
 }
+
+#mainView {
+    height: 250px;
+    width: 250px;  
+    border-radius: 5px;
+    background-color: #eb9100;
+    background-position: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+    transition: all 1s;  
+  }

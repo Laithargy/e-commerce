@@ -26,7 +26,7 @@
 }
 
 html {
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 a {
@@ -66,31 +66,32 @@ main {
 footer {
     font-size: 2ex;
     padding: 1ex;
+    margin-bottom: 0;
     text-align: center;
     background: var(--gold);
     justify-content: space-between;
-
-    .brand {
-        .footerIcon {
-            font-size: 3ex;
-        }
-    }
-
-    .footerLogo {
-        height: 4ex;
-        width: auto;
-        mix-blend-mode: multiply;
-    }
-
-    .copyrights {
-        .references {
-            font-size: 0.5em;
-        }
-
-    }
+    position: ab;
 }
 
+.brand {
+    .footerIcon {
+        height: 3ex;
+    }
+     
+}
 
+.footerLogo {
+    height: 4ex;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.copyrights {
+    .references {
+        font-size: 0.5em;
+    }
+
+}
 
 /* NAVBAR */
 
@@ -140,14 +141,14 @@ footer {
     display: none;
     position: relative;
     z-index: 100000;
+}
 
-    .subStyle {
-        display: inline-block;
-        border-radius: 35%;
-        background-color: var(--white);
-        padding: 0.5ex;
-        color: var(--carbon);
-    }
+.subStyle {
+    display: inline-block;
+    border-radius: 35%;
+    background-color: var(--white);
+    padding: 0.5ex;
+    color: var(--carbon);
 }
 
 .subMenu:hover .subMenuList{

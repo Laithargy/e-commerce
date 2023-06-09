@@ -120,28 +120,28 @@ body{
 
     .model-rolex{
         width: 100%;
-        padding-left: 370px
+        padding-left: 405px
         
     }
     .model-rolex1{
         width: 100%;
-        padding-left: 370px;
+        padding-left: 395px;
         
     }
     .element-1{
-        position: absolute;
-        width: 100%;
-        padding: 4%;
-        text-align: center;
-        margin-left: -100px;
-        margin-bottom: 10px;
+    position: relative;
+    width: fit-content;
+    margin-left: -765px;
+    padding: 1%;
+    margin-top: 85px;
+    text-align: center;
+}
         
-    }
     
     .element-2{
         position: relative;
         width: fit-content;
-        margin-left: 135px;
+        margin-left: 815px;
         padding: auto;
         margin-top: -385px;
         text-align: center;
@@ -308,9 +308,4 @@ body{
 
     }
             
-   
-
-   
-    
-
 }

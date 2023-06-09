@@ -15,20 +15,22 @@
 
 .hero-btn {
     position: relative;
-    font-size: 3em;
+    font-size: 2em;
     background-color: var(--carbon);
     color : var(--white);
-    }
+}
 
 #container-carousel {
 
     display: flex;
     flex-direction: row;
 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     position: relative;
+    /* padding-top: 3em; */
+    padding: 3em;
 
     /* padding-left: 5%;
     padding-right: 5%; */
@@ -38,6 +40,7 @@
 .navButton {
     background: inherit;
     font-size: 3em;
+    display: none;
 }
 
 .slider-homepage {
@@ -52,16 +55,6 @@
 }
 
 #slideShow {
-    height: 300px;
-    /* max-height: auto;
-    max-width: auto; */
-    background-size: cover;
-    width: 300px;
-    border-radius: 5px;
-    z-index : 100;
-}
-
-#mainView {
     height: 250px;
     width: 250px;  
     border-radius: 5px;
@@ -70,5 +63,60 @@
     margin-left: 10px;
     margin-right: 10px;
     z-index: 1;
-    transition: all 1s;  
+}
+
+#slideShow:hover {
+    transform: scale(1.2);
+}
+
+#slideLeft {
+    height: 400px;
+    width: 150px;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(5deg);
+    transform-origin: top right;
+    background-color: #eb9100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideLeft:hover {
+    transform: scale(1.2);
+}
+
+#slideRight {
+    height: 400px;
+    width: 150px;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(-5deg);
+    transform-origin: top left;
+    background-color: #eb9100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #slideRight:hover {
+    opacity: 1;
+  }
+
+  #linkSlide { 
+    cursor: pointer;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+
+  @media (max-width:900px) {
+
+    .banner-homepage {
+        padding: 7em;
+    }
+    
+    .hero-btn {
+        font-size: 1em;
+    } 
   }

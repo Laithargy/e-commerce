@@ -60,24 +60,46 @@ main {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    padding-bottom: 3em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3.2em;
+}
+
+h3 {
+    font-size: 2.9em;
+}
+
+h4 {
+    font-size: 2.6em;
+}
+
+h5 {
+    font-size: 2.3em;
+}
+
+p {
+    font-size: 2em;
 }
 
 /* FOOTER */
 footer {
     font-size: 2ex;
     padding: 1ex;
-    margin-bottom: 0;
     text-align: center;
     background: var(--gold);
     justify-content: space-between;
-    position: ab;
+    position: relative;
+    z-index: 1;
 }
 
-.brand {
-    .footerIcon {
-        height: 3ex;
-    }
-     
+.footerIcon {
+    height: 3ex;
 }
 
 .footerLogo {
@@ -101,15 +123,15 @@ footer {
     overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
+}
 
-    .hamburger {
-        font-size: 1.5em;
-        display: none;
-    }
+.hamburger {
+    font-size: 1.5em;
+    display: none;
+}
 
-    a {
-        font-size: 3ex;
-    }
+a {
+    font-size: 3ex;
 }
 
 .navbar svg{

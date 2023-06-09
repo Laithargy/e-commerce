@@ -3,12 +3,13 @@
 
 :root {
     --medium-green : #2C5B1C;
-    --black : #000;
-    --white : #fff;
+    --black : #1d1d1F;
+    --white : #f5f5f7;
     --purple : #2C1E53;
     --blue : #232C7A;
     --gold : #79602F;
     --carbon : #2F2D28;
+    --light-carbon : #3b3832;
     --cream : #D9D9D9;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -54,21 +55,15 @@ body {
     height: 100vh;
     width: auto;
     box-sizing: border-box;
-    background: url('../img/body-background.jpg');
-    background-position : center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--light-carbon);
 }
 main {
     box-sizing: border-box;
-    background: url('../img/body-background.jpg');
-    background-position : center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: auto;
+
     padding-bottom: 10em;
     position: relative;
+
+    background-color: var(--light-carbon);
 }
 
 h1 {
@@ -99,15 +94,12 @@ p {
 
 #footerDiv {
     font-size: 2ex;
-    padding: 1ex;
     text-align: center;
     background: var(--gold);
 
-    /* justify-content: space-between; */
     z-index: 300;
     bottom: 0px;
     right: 0px; left: 0px;
-    position: fixed;
     padding-top: 1ex;
 }
 
@@ -128,7 +120,7 @@ p {
 
 .navbar {
     display: flex;
-    font-size: 3ex;
+    font-size: 2em;
     overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
@@ -140,7 +132,7 @@ p {
 }
 
 a {
-    font-size: 3ex;
+    font-size: 1em;
 }
 
 .navbar svg{
@@ -169,7 +161,7 @@ a {
     /* background-color: var(--carbon);
     color: var(--white);
     border-radius: 5px; */
-    padding: 1em;
+    padding: 0.2em;
 }
 
 .subMenuList {
@@ -180,9 +172,9 @@ a {
 
 .subStyle {
     display: inline-block;
-    border-radius: 35%;
+    border-radius: 25px;
     background-color: var(--carbon);
-    padding: 0.5ex;
+    /* padding: 0.5ex; */
     color: var(--cream);
 }
 
@@ -196,8 +188,18 @@ a {
 
 @media (max-width: 900px) {
 
+    .navbar {
+        font-size: 1.5em;
+    }
+
     .navbar .panier svg, .hamburger{
         font-size: 1em;
+    }
+
+    .subStyle {
+        border-radius: 25px;
+        background-color: var(--cream);
+        color: var(--carbon);
     }
 
     .subMenu:hover .subMenuList{
@@ -232,5 +234,29 @@ a {
     }
     .subMenuList.active {
         display: block;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.6em;
+    }
+    
+    h4 {
+        font-size: 1.4em;
+    }
+    
+    h5 {
+        font-size: 1.3em;
+    }
+    
+    p {
+        font-size: 1.1em;
     }
 }

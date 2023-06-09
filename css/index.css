@@ -7,14 +7,15 @@
 }
 
 .banner-homepage {
+    position: relative;
     background-image: url('../img/uaHKzJq.jpg');
     top: 0; right: 0; left: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10em;
+    height: 300px;
 }
-
 
 .hero-image {
     display: flex;
@@ -24,8 +25,8 @@
 .hero-btn {
     position: relative;
     font-size: 2em;
-    background-color: var(--carbon);
-    color : var(--white);
+    background-color: var(--white);
+    color : var(--carbon);
 }
 
 /* CAROUSEL CONTAINER */
@@ -38,27 +39,25 @@
     align-items: center;
     box-sizing: border-box;
     position: relative;
-    padding: 3em;
     background: transparent;
 }
 
 .navButton {
     background: inherit;
-    font-size: 3em;
+    /* font-size: 3em; */
     display: none;
 }
 
 .slider-homepage {
 
-    justify-content: space-evenly;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../img/slider_background_img.jpg');
 
-    margin-left: 5%;
-    margin-right: 5%;
     box-sizing: border-box;
+
+    padding: 3em;
 
     display: flex;
     flex-direction: column;
@@ -125,7 +124,6 @@
 .textIntro {
     position: relative;
     text-align: center;
-    margin: 0 10% 1% 10%;
     display: block;
     background: var(--cream);
 }
@@ -139,7 +137,6 @@
 
     text-align: center;
     color: var(--cream);
-    margin: 0 5em 0 5em;
 }
 
 .shopDisplay h1{
@@ -183,6 +180,10 @@
     color: var(--carbon);
 }
 
+.productsU.middle {
+    flex-direction: row-reverse;
+}
+
 .productsU.middle .displayTXT {
     background-color: var(--gold);
 }
@@ -203,9 +204,39 @@
 
     .navButton {
         display: initial;
+        font-size: 1em;
     }
 
     #slideRight, #slideLeft {
         display: none;
+    }
+
+    .shopDisplay h1 {
+        font-size: 2em;
+    }
+
+    .productsU img {
+        height: 8em;
+        width: 8em;
+    }
+
+    .productsU {
+        flex-direction: column;
+    }
+
+    .productsU.middle {
+        flex-direction: column;
+    }
+
+    .displayTXT h3{
+        font-size : 1.5em;
+    }
+
+    .displayPricing {
+        font-size: 1.5em;
+    }
+
+    .slider-homepage {
+        padding: none;
     }
 }

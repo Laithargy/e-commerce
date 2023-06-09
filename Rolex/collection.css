@@ -131,19 +131,19 @@ body{
         
     }
     .element-1{
-        position: absolute;
-        width: 100%;
-        padding: 4%;
+        position: relative;
+        width: fit-content;
+        margin-left: -794px;
+        padding: auto;
+        margin-top: 34px;
         text-align: center;
-        margin-left: -100px;
-        margin-bottom: 10px;
-        
-    }
+}
+    
     
     .element-2{
         position: relative;
         width: fit-content;
-        margin-left: 135px;
+        margin-left: 846px;
         padding: auto;
         margin-top: -385px;
         text-align: center;

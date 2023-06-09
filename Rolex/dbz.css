@@ -151,24 +151,25 @@ body{
         
     }
     .element-1{
-        position: absolute;
-        width: 100%;
-        padding: 4%;
-        text-align: center;
-        margin-left: -100px;
-        margin-bottom: 10px;
-        
+    position: relative;
+    width: fit-content;
+    margin-left: -388px;
+    padding: auto;
+    margin-top: 39px;
+    text-align: center;
+
     }
     
     .element-2{
-        position: relative;
-        width: fit-content;
-        margin-left: 150px;
-        padding: auto;
-        margin-top: -184px;
-        text-align: center;
+    position: relative;
+    width: fit-content;
+    margin-left: 424px;
+    padding: auto;
+    margin-top: -184px;
+    text-align: center;
+}
     
-    }
+
     .element-3{
         position: relative;
         width: fit-content;
@@ -330,6 +331,5 @@ body{
         margin-top: -10px;
 
     }
-            
-
+         
 }

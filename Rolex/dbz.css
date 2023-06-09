@@ -126,3 +126,210 @@ body{
     margin-left: 117px;
 }
 
+
+
+/*Responsive*/
+
+
+
+@media only screen and (max-width:500px){
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(img/45f2d2297997d33ef4b19cab7128c22f.jpg);
+    }
+
+    .model-rolex{
+        width: 100%;
+        padding-left: 370px
+        
+    }
+    .model-rolex1{
+        width: 100%;
+        padding-left: 370px;
+        
+    }
+    .element-1{
+        position: absolute;
+        width: 100%;
+        padding: 4%;
+        text-align: center;
+        margin-left: -100px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .element-2{
+        position: relative;
+        width: fit-content;
+        margin-left: 150px;
+        padding: auto;
+        margin-top: -184px;
+        text-align: center;
+    
+    }
+    .element-3{
+        position: relative;
+        width: fit-content;
+        margin-left: 470px;
+        padding: 2%;
+        margin-top: -150px;
+    }
+    .element-4{
+        position: absolute;
+        width: fit-content;
+        margin-left: 480px;
+        padding: auto;
+        margin-top: 25px;
+        text-align: center;
+ 
+    }
+    .ele-4{
+        margin-left: -2px;
+        color:rgb(255, 255, 255);
+    }
+    .elem-4{
+        margin-left: -7px;
+        margin-top: -20px;
+    }
+    .element-5{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 760px;
+        margin-top: -269px;
+    
+    }
+    .ele-5{
+        color: rgb(0, 0, 0);
+        margin-left: -12px;
+    }
+    .elem-5{
+        margin-left: 200px;
+        
+    }
+    .element-6{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 910px;
+        margin-top: -260px;
+        
+        }
+    .ele-6{
+        color: rgb(0, 0, 0);
+        width: fit-content;
+        margin-left: -5px;
+        }
+    .elem-6{
+            margin-left: -3px;
+            
+        }
+    .element-7{
+        position: absolute;
+        width: fit-content;
+        margin-left: -35px;
+        padding: auto;
+        margin-top: 300px;
+        text-align: center;
+    
+    }
+    .ele-7{
+        margin-left: -20px;
+        color:rgb(34, 95, 19);
+    }
+    .elem-7{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-8{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 384px;
+        margin-top: 300px;
+    
+    }
+    .ele-8{
+        color: rgb(212, 80, 8);
+        margin-left: -23px;
+    }
+    .elem-8{
+        margin-left: -23px;
+        
+    }
+    .element-9{
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        margin-left: 790px;
+        margin-top: 300px;
+        
+        }
+    .ele-9{
+        color: rgb(175, 25, 178);
+        margin-left: -5px;
+        }
+    .elem-9{
+            margin-left: -23px;
+            
+    }
+    .element-10{
+        position: absolute;
+        width: fit-content;
+        margin-left: 165px;
+        padding: auto;
+        margin-top: 740px;
+        text-align: center;
+    
+    }
+    .ele-10{
+        margin-left: -20px;
+        color:rgb(12, 18, 100);
+    }
+    .elem-10{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-11{
+        position: absolute;
+        width: fit-content;
+        margin-left: 380px;
+        padding: auto;
+        margin-top: 1150px;
+        text-align: center;
+    
+    }
+    .ele-11{
+        margin-left: -20px;
+        color:rgb(255, 255, 255);
+    }
+    .elem-11{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+    .element-12{
+        position: absolute;
+        width: fit-content;
+        margin-left: 578px;
+        padding: auto;
+        margin-top: 740px;
+        text-align: center;
+    
+    }
+    .ele-12{
+        margin-left: -20px;
+        color:rgb(195, 28, 109);
+    }
+    .elem-12{
+        margin-left: -27px;
+        margin-top: -10px;
+
+    }
+            
+
+}

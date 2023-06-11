@@ -67,8 +67,8 @@
 
 #linkSlide #slideShow {
     background: none;
-    height: 12em;
-    width: 12em;
+    height: 16em;
+    width: 16em;
     border-radius: 5px;
     background-color: var(--gold);
     background-position: 50%;
@@ -238,5 +238,10 @@
 
     .slider-homepage {
         padding: none;
+    }
+
+    #linkSlide #slideShow {
+        height: 12em;
+        width: 12em;
     }
 }

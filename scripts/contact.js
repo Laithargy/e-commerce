@@ -12,7 +12,6 @@ let err = document.querySelectorAll('.err');
 
 
 function validateForm(){
-    console.log("Hey, i work");
 
     clearMessage();
 
@@ -100,7 +99,6 @@ let mapping = [
 
 function displayMap (map) {
 
-    console.log("CC");
     let mapDisplay = document.getElementById('address');
     mapDisplay.src = mapping[map];
 }

@@ -62,7 +62,7 @@ body {
 main {
     box-sizing: border-box;
 
-    padding-bottom: 10em;
+    /* padding-bottom: 10em; */
     position: relative;
 }
 

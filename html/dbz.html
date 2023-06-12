@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="navbarFooter" content="Project Assofac Montreuil - June 2023. This html is only to display the navbar and the footer as it was mainly to separate work efficiently. There is some simple javascript used and a lots of intricated CSS.">
+    <meta name="navbarFooter" content="Project Assofac Montreuil - June 2023. Discover our newest collaboration with the most popular shonen : DBZ ! ">
 
     <!-- LINK CSS -->
     <link rel ="stylesheet" href="../css/stylesheet.css">
@@ -57,17 +57,37 @@
         <section class="displayDBZ">
 
             <div class="dbzTitle">
-                <h3><span>SWATCH : </span> Collection Dragon Ball Z</h3>
+                <h3><span>ROLEX x DBZ : </span> Collection Dragon Ball Z</h3>
             </div>
 
             <div class="containerCarousel">
 
-                <div class="mainDBZImg"></div>
+                <div id="mainDBZImg"><img id ="displayDBZ" src=""></div>
+
+                <div  id="price"><button data-modal-target="#popup" class="displayPrice"> Buy now for 1600 $</button></div>
+                <div class="popup" id="popup">
+
+                    <div class="popupHeader">
+                        <div class="title">Out of stock</div>
+                        <button data-close-button class="closeButton">&times;</button>
+                    </div>
+                    <div class="popupText">
+                        This collection is out of stock for now.<br>Come back later !
+                    </div>
+                </div>
+
+                <div id="overlayDBZ"></div>
 
                 <div class="carouselList">
                     
-                    <div><img src=""></div>
-
+                    <div id="blankImg"><img src="../img/boo.png"></div>
+                    <div id="blankImg"><img src="../img/boo.png"></div>
+                    <div id="boo"><img src="../img/boo.png"></div>
+                    <div id="freezer"><img src="../img/freezer.png"></div>
+                    <div id="sangoku"><img src="../img/sangoku_head.png"></div>
+                    <div id="sangokuKid"><img src="../img/sangoku_kid.png"></div>
+                    <div id="tortuegeniale"><img src="../img/tortuegeniale.png"></div>
+                    <div id="shenlong"><img src="../img/shenlong.png"></div>
                 </div>
 
             </div>

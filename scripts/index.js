@@ -47,8 +47,9 @@ function loadGallery () {
     rightView.style.backgroundSize = "cover";
 
 
-    let linkSlide = document.getElementById('linkSlide');
-    linkSlide.href = imgGallery[mainImg];
+    // LINK THE PRODUCT TO THE PRODUCT PAGE
+    // let linkSlide = document.getElementById('linkSlide');
+    // linkSlide.href = imgGallery[mainImg];
 };
 
 

@@ -48,6 +48,7 @@ main {
 
 .navButton {
     background: inherit;
+    color: var(--gold);
     /* font-size: 3em; */
     display: none;
 }

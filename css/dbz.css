@@ -1,0 +1,24 @@
+span {
+    color: var(--red);
+}
+
+.dbzTitle {
+    color: var(--yellow);
+    text-align: center;
+}
+
+.textDBZ {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#paragraph1 {
+    background: var(--cream);
+    font-size: 1em;
+}
+
+#paragraph2 {
+    font-size: 1em;
+    background: var(--light-green);
+}

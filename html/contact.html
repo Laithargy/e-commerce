@@ -12,8 +12,9 @@
 
     <!-- LINK CSS -->
     <link rel ="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/contat.css">
 
-    <title>Rolex</title>
+    <title>Contact us</title>
 </head>
 <body>
 
@@ -54,6 +55,89 @@
 
     <main>
 
+        <section class="contactForm">
+
+            <div id="overlay">
+
+                <div id="contact">
+                    
+                    <h2>OUR SHOPS</h2>
+
+                    <div class="countries">
+                        <div id="switzerland">
+                            <img src="../img/drapeau-suisse.jpg" alt="drapeau-suisse">
+                        </div>
+
+                        <div id="france">
+                            <img src="../img/Flag_of_France.webp" alt="drapeau-france">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <iframe id="address" src=""></iframe>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form onsubmit="event.preventDefault(); validateForm()" id="formContent">
+
+                        <h2 id="contactUS">Contact us</h2>
+
+                        <div>
+                            <label for="firstName">First Name :</label>
+                            <input type="text" id="firstName" placeholder="Your first name...">
+                            <small class="err"></small>
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last Name :</label>
+                            <input type="text" id="lastName" placeholder="Your family name...">
+                            <small class="err"></small>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone number :</label>
+                            <input type="text" id="number" placeholder="Your phone number">
+                            <small class="err"></small>
+                        </div>
+
+                        <div>
+                            <select id="country" name="country">
+                                <option value="australia">France</option>
+                                <option value="australia">England</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">Switzerland</option>
+                                <option value="usa">USA</option>
+                                <option value="usa">UEA</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="email">Email :</label>
+                            <input type="text" id="email" placeholder="abx@xyz.ij">
+                            <small class="err"></small>
+                        </div>
+
+                        <div>
+                            <label for="message">Message :</label>
+                            <textarea type="text" id="message" placeholder="Your message" rows="8"></textarea>
+                            <small class="err"></small>
+                        </div>
+
+                        <div class="submitButton">
+                            <input type="submit" value="Submit">
+                            <p id="success"></p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
 
 <!-- FOOTER -->
@@ -73,6 +157,9 @@
 
 <!-- NAVBAR JS -->
 <script src="../scripts/navbar.js"></script>
+
+<!-- CONTACT FORM JS -->
+<script src="../scripts/contact.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,9 @@
 /* BANNER "FIND OUT MORE" */
 
+main {
+    background-color: var(--light-carbon);
+}
+
 .bodyHome {
     display: flex;
     flex-direction: column;

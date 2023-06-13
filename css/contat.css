@@ -82,6 +82,7 @@ textarea::-webkit-scrollbar-thumb {
 
 /* PART WITH COUNTRIES AND MAP */
 .countries {
+    justify-content: center;
     display: flex;
     padding: 30px;
 }
@@ -92,7 +93,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 #contact {
-    margin : 17vh 10vw 10vw 0;
+    /* margin : 17vh 10vw 10vw 0; */
     flex: 1;
     display: flex;
     flex-direction: column;

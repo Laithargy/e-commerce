@@ -31,17 +31,25 @@ document.getElementById('shenlong').addEventListener("click", function() {displa
 displayDBZ(0);
 
 // MODAL PART / POP UP "ADDED TO CART"
+
+// GET THE BUTTON CONTAINING THE TARGET
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
+// GET THE CLOSE BUTTON
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
+// OVERLAY SET
 const overlay = document.getElementById('overlayDBZ');
 
+// WHEN YOU CLICK ON BUTTON (IN CASE YOU HAVE MORE THAN ONE)
 openModalButtons.forEach(button => {
+    // CHECK WHEN YOU CLICK ON THE CURRENT BUTTON
     button.addEventListener("click", () =>{
+        // SET A CONST TO THE BUTTON AND WHAT IT SELECT
         const modal = document.querySelector(button.dataset.modalTarget);
         openPopup(modal);
     })
 })
 
+// SAME THING BUT CLOSED
 closeModalButtons.forEach(button => {
     button.addEventListener("click", () =>{
         modal = button.closest('.popup');
@@ -49,6 +57,7 @@ closeModalButtons.forEach(button => {
     })
 })
 
+// CHECK ON THE OVERLAY IF I CLICK ON IT AND CLOSE IT
 overlay.addEventListener("click", () => {
     const modals = document.querySelectorAll('.popup.active');
     modals.forEach(modals =>{
@@ -56,12 +65,14 @@ overlay.addEventListener("click", () => {
     })
 })
 
+// OPEN THE POP UP WINDOW AND SHOW IT
 function openPopup(modal) {
     if (modal == null) return
     modal.classList.add('active');
     overlay.classList.add('active');
 }
 
+// CLOSE THE POP UP WINDOW
 function closePopup(modal) {
     if (modal == null) return
     modal.classList.remove('active');

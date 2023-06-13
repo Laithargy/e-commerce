@@ -171,7 +171,7 @@ span {
 
 /* END PRICE BUTTON & POP UP WINDOW STYLING */
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 
     /* APPLY STYLE TO THE BUTTON PRICE */
     .displayPrice {
@@ -210,7 +210,7 @@ span {
 
     /* RESIZE 6 IMAGES TO ADAPT PHONE SCREEN */
     .carouselList img{
-        max-height: 5em;
+        max-height: 8em;
 
         border-radius: 0;
         border-radius: 50%;

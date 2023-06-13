@@ -38,7 +38,6 @@
                     <a class="mainStyle">Products</a> 
                     <div class="subMenuList">
                         <a href="collection.html" class="subStyle">Collection</a>
-                        <a href="model.html" class="subStyle">Rolex</a>
                         <a href="dbz.html" class="subStyle">DBZ</a>
                     </div>
                 </li>
@@ -47,18 +46,34 @@
 
             </ul>
 
-            <a href="panier.html" class="mainStyle" id="panier"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a>
+            <a href="notFound.html" class="mainStyle" id="panier"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a>
         </nav>
 
     </header>
 <!-- END NAVBAR -->
 
     <main>
+
+        <!-- THE POP UP WINDOW -->
+        <div class="popup" id="popup">
+
+            <div class="popupHeader">
+                <div class="title">Out of stock</div>
+                <button data-close-button class="closeButton">&times;</button>
+            </div>
+            <div class="popupText">
+                This product is out of stock for now.<br>Come back later !
+            </div>
+        </div>
+        <!-- ADD OPACITY BEHIND THE POP UP WINDOWS -->
+        <div id="overlayIndex"></div>
+
+
         <div class="bodyHome">
             <section class="banner-homepage">
 
                 <div class="hero-image">
-                    <button class="hero-btn">Find out more</button>
+                    <button class="hero-btn"><a  href="notFound.html">Find out more</a></button>
                 </div>
 
             </section>
@@ -96,7 +111,7 @@
                         <div class="displayTXT">
                             <h3>The Classic</h3>
                             <p><br>Rolex / Sea-Dweller / 16600 Circa 2010 / Full Set - Homme</p>
-                            <button class="displayPricing">2000 $</button>
+                            <button  data-modal-target="#popup" class="displayPricing">2000 $</button>
                         </div>
                     </div>
 
@@ -109,7 +124,7 @@
                         <div class="displayTXT">
                             <h3>The Classic</h3>
                             <p><br>Rolex Exclusive / MEDUSA / Messus 2018 / Full Set - Homme</p>
-                            <button class="displayPricing">12000 $</button>
+                            <button  data-modal-target="#popup" class="displayPricing">12000 $</button>
                         </div>
                         
                     </div>
@@ -121,7 +136,7 @@
                         <div class="displayTXT">
                             <h3>The Classic</h3>
                             <p><br>Rolex / Explorer II / Circa 2010 / Full Set - Homme</p>
-                            <button class="displayPricing">2000 $</button>
+                            <button  data-modal-target="#popup" class="displayPricing">2000 $</button>
                         </div>
                     </div>
 
@@ -133,11 +148,11 @@
 <!-- FOOTER -->
     <footer id="footerDiv">
         <div class="brand">
-            <a href="#" class="footerIcon"><i class="fa fa-youtube-play"></i></a>
-            <a href="#" class="footerIcon"><i class="fa fa-twitter"></i></a>
+            <a class="footerIcon"><i class="fa fa-youtube-play"></i></a>
+            <a class="footerIcon"><i class="fa fa-twitter"></i></a>
             <a class="footerIcon"><img src="../img/logo.jpg" class="footerLogo"></a>
-            <a href="#" class="footerIcon"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="footerIcon"><i class="fa fa-linkedin"></i></a>
+            <a class="footerIcon"><i class="fa fa-facebook"></i></a>
+            <a class="footerIcon"><i class="fa fa-linkedin"></i></a>
         </div>
         <div class="copyrights">
             <p class="references">Design copyrights to MohamedH & MohamedB | Website copyrigts to mzhu & Baruaudoy92</p>

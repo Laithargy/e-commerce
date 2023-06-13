@@ -12,8 +12,9 @@
 
     <!-- LINK CSS -->
     <link rel ="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/collection.css">
 
-    <title>Rolex</title>
+    <title>Collection</title>
 </head>
 <body>
 
@@ -52,6 +53,25 @@
 <!-- END NAVBAR -->
 
     <main>
+        <section displayFilterBar>
+
+            <div id="searchContainer">
+                <div id="searchDisplay">
+                    <input type="search" id="searchInput" placeholder="Search product...">
+                    <button id ="searchButton">Search</button>
+                </div>
+            </div>
+
+            <div id="filterButton">
+                <button class="buttonContent" onclick="filterProduct('all')">All</button>
+                <button class="buttonContent" onclick="filterProduct('silver')">Silver</button>
+                <button class="buttonContent" onclick="filterProduct('gold')">Gold</button>
+                <button class="buttonContent" onclick="filterProduct('classic')">Classic</button>
+            </div>
+
+            <div id="productsDisplay"><!-- CONTAIN IMAGE --></div>
+
+        </section>
 
     </main>
 
@@ -72,6 +92,9 @@
 
 <!-- NAVBAR JS -->
 <script src="../scripts/navbar.js"></script>
+
+<!-- COLLECTION JS -->
+<script src="../scripts/collection.js"></script>
 
 </body>
 </html>

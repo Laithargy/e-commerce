@@ -1,7 +1,12 @@
+.contactForm {
+    display: flex;
+}
+
 #overlay {
     display: flex;
-    width: 100%;
+    flex: 1;
     position: relative;
+    margin: 5em auto 1em 1em;
 }
 
 
@@ -13,7 +18,7 @@ form {
     max-width: 550px;
     width: 90%;
     background: var(--white);
-    margin : 17vh auto 0 auto;
+    margin: 5em auto 1em auto;
     padding: 1em;
     border-radius: 5px;
     box-sizing: border-box;
@@ -107,7 +112,11 @@ textarea::-webkit-scrollbar-thumb {
     width: 600px;
 }
 
-@media (max-width:900px) {
+@media (max-width:920px) {
+
+    .contactForm {
+        flex-direction: column;
+    }
 
     #address {
         height: 15em;
@@ -116,9 +125,11 @@ textarea::-webkit-scrollbar-thumb {
 
     #overlay {
         flex-direction: column;
+        margin: 1em auto;
     }
 
-    #contact {
-        margin : 15vh 1em 1em 1em;
+    #contact img {
+        height: 4em;
+        width: 8em;
     }
 }

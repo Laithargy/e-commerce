@@ -182,7 +182,7 @@ p {
 
 /* MEDIA QUERY FOR NAVBAR*/
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 
     .navbar {
         font-size: 1.5em;
@@ -217,7 +217,7 @@ p {
         flex-direction: column;
         position: absolute;
         z-index: 10;
-        top: 12ex; right: 0; left: 0;
+        top: 80%; right: 0; left: 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 

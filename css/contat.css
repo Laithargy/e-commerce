@@ -107,7 +107,7 @@ textarea::-webkit-scrollbar-thumb {
     width: 600px;
 }
 
-@media (max-width:900px) {
+@media (max-width:920px) {
 
     #address {
         height: 15em;

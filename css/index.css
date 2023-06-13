@@ -197,7 +197,7 @@ main {
     background-color: var(--carbon);
 }
 
-@media (max-width:900px) {
+@media (max-width:920px) {
 
     .banner-homepage {
         padding: 7em;

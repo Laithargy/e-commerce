@@ -1,0 +1,23 @@
+main {
+    padding-bottom: 1em;
+}
+
+/* RESEARCH BAR */
+#searchContainer {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#searchDisplay button, input {
+    font-size: 2em;
+}
+
+#searchDisplay input:focus {
+    border-bottom: 3px solid var(--blue);
+}
+
+#searchDisplay button {
+    color: var(--white);
+    background: var(--blue);
+}
+

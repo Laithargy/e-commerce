@@ -148,12 +148,12 @@ let mapping = [
 
 
 
-function displayMap (map) {
+function displayMap (mapPosition) {
 
     // GET THE ELEMENT CONTAINING WHERE THE ADRESS SHOULD BE
     let mapDisplay = document.getElementById('address');
     // CHANGE THE <iframe src=" mapping[map] "> TO WHAT IS CONTAIN IN MAPPING
-    mapDisplay.src = mapping[map];
+    mapDisplay.src = mapping[mapPosition];
 }
 
 // GET THE EVENT ON THE DIV, IF CLICKED ON ONE, IT DISPLAY WHAT IS ASKED

@@ -1,5 +1,6 @@
 // DISPLAY THE WATCH
 
+// VARIABLE CONTAINING IMAGES FOR THE DISPLAY OF 6 IMAGES
 let displayIMG = [
     "../img/dbz_M.png",
     "../img/freezer_montre.png",
@@ -9,11 +10,16 @@ let displayIMG = [
     "../img/shenlong_watch.png"
 ];
 
+// FUNCTION THAT PUT THE WATCH DISPLAY
+// (watch) is an INTEGER, position in my variable displayIMG
 function displayDBZ(watch) {
+    // GET THE ELEMENT IMG TO REPLACE THE SRC
     let selectDiv = document.getElementById('displayDBZ');
+    // <img src=" displayIMG[watch]"> REPLACE BY THE POSITION IN MY VARIABLE"
     selectDiv.src = displayIMG[watch];
 }
 
+// GET THE ELEMENT CLICKED ON TO DISPLAY THE CORRESPONDING WATCH
 document.getElementById('boo').addEventListener("click", function() {displayDBZ(0);});
 document.getElementById('freezer').addEventListener("click", function() {displayDBZ(1);});
 document.getElementById('sangoku').addEventListener("click", function() {displayDBZ(2);});
@@ -21,6 +27,7 @@ document.getElementById('sangokuKid').addEventListener("click", function() {disp
 document.getElementById('tortuegeniale').addEventListener("click", function() {displayDBZ(4);});
 document.getElementById('shenlong').addEventListener("click", function() {displayDBZ(5);});
 
+// DISPLAY A WATCH BY DEFAULT
 displayDBZ(0);
 
 // MODAL PART / POP UP "ADDED TO CART"

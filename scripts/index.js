@@ -23,6 +23,9 @@ let nextImg = 1;
 let header = document.querySelector(".textIntro h2");
 let paragraph = document.querySelector(".textIntro p");
 
+let isTransitioning = false;
+let slideInterval;
+
 function loadGallery () {
 
     // SLIDER DESCRIPTION
@@ -30,22 +33,26 @@ function loadGallery () {
     paragraph.textContent = introText[mainImg];
 
 
+    // MIDDLE SLIDER
     let mainView = document.getElementById('slideShow');
     mainView.style.background = "url(" +  imgGallery[mainImg] + ")";
     mainView.style.backgroundPosition = "center";
     mainView.style.backgroundSize = "cover";
 
+    // LEFT SLIDER
     let leftView = document.getElementById('slideLeft');
     leftView.style.background = "url(" +  imgGallery[prevImg] + ")";
     leftView.style.backgroundPosition = "center";
     leftView.style.backgroundSize = "cover";
 
 
+    // RIGHT SLIDER
     let rightView = document.getElementById('slideRight');
     rightView.style.background = "url(" +  imgGallery[nextImg] + ")";
     rightView.style.backgroundPosition = "center";
     rightView.style.backgroundSize = "cover";
 
+    slideInterval = setInterval(scrollRight, 5000);
 
     // LINK THE PRODUCT TO THE PRODUCT PAGE
     // let linkSlide = document.getElementById('linkSlide');
@@ -54,6 +61,15 @@ function loadGallery () {
 
 
 function scrollRight() {
+
+    // CHECK IF CLICKED, IF YES, DO NOTHING
+    if (isTransitioning) {
+        return;
+    }
+
+    // SET STATEMENT TO TRUE
+    isTransitioning = true;
+
     // CLICK ON RIGHT ARROW
     // CHANGE THE MAIN IMG BY THE NEXTIMG
     prevImg = mainImg;
@@ -62,13 +78,28 @@ function scrollRight() {
     // CONDITION IN CASE WE ARE AT THE END OF OUR CAROUSEL OF IMG
     if (nextImg >= (imgGallery.length -1)) {
         nextImg = 0;
-      } else {
+    } else {
         nextImg++;
-      }; 
-      loadGallery();
+    };
+
+    // SET TRANSITIONING TO FALSE
+    // SHOW THE NEXT SLIDER IN 0.5s
+    setTimeout(function () {
+        isTransitioning = false;
+    }, 500);
+    loadGallery();
+    
 };
 
 function scrollLeft() {
+
+    // CHECK IF CLICKED IF YES, DO NOTHING
+    if (isTransitioning) {
+        return;
+    }
+    // SET IT TO TRUE
+    isTransitioning = true;
+
     // CLICK ON LEFT ARROW
     // CHANGE THE MAIN IMG BY THE PREVIMG
     nextImg = mainImg;
@@ -81,6 +112,11 @@ function scrollLeft() {
     else {
         prevImg--;
     };
+
+    // SET TRANSITIONING TO FALSE
+    setTimeout(function () {
+        isTransitioning = false;
+    }, 500); 
     loadGallery();
 };
 

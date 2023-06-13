@@ -46,13 +46,6 @@ function validateForm(){
         errFlag = true;
     }
 
-    // CHECK INPUT PHONE IS NOT EMPTY
-    if (phoneInput.value < 1) {
-        err[2].innerText = "Phone number is empty.";
-        phoneInput.classList.add("err-border");
-        errFlag = true;
-    }
-
     // CHECK INPUT PHONE FORMAT IS VALID
     if (!checkPhone(phoneInput.value)) {
         err[2].innerText = "Invalid phone number.";
@@ -60,16 +53,23 @@ function validateForm(){
         errFlag = true;
     }
 
-    // CHECK INPUT EMAIL IS NOT EMPTY
-    if (emailInput.value < 1) {
-        err[3].innerText = "Email is empty.";
-        emailInput.classList.add("err-border");
+    // CHECK INPUT PHONE IS NOT EMPTY
+    if (phoneInput.value.length < 1) {
+        err[2].innerText = "Phone number is empty.";
+        phoneInput.classList.add("err-border");
         errFlag = true;
     }
 
     // CHECK INPUT MAIL IS CORRECT PATTERN
     if (!checkEmail(emailInput.value)) {
         err[3].innerText = "Invalid email address.";
+        emailInput.classList.add("err-border");
+        errFlag = true;
+    }
+    
+    // CHECK INPUT EMAIL IS NOT EMPTY
+    if (emailInput.value.length < 1) {
+        err[3].innerText = "Email is empty.";
         emailInput.classList.add("err-border");
         errFlag = true;
     }

@@ -152,6 +152,7 @@ main {
 }
 
 .productsPanel {
+    flex-direction: column;
     background-image: url('../img/productsPanel_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,7 +168,8 @@ main {
 }
 
 .displayTXT {
-    padding: 0 3em 2em 3em;
+    padding: 1em;
+    width: 100%;
 }
 
 .productsU.left .displayTXT {
@@ -175,7 +177,7 @@ main {
 }
 
 .productsU img {
-    height: 25em;
+    height: 24em;
     width: auto;
 }
 

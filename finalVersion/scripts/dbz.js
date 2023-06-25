@@ -28,7 +28,7 @@ document.getElementById('tortuegeniale').addEventListener("click", function() {d
 document.getElementById('shenlong').addEventListener("click", function() {displayDBZ(5);});
 
 // DISPLAY A WATCH BY DEFAULT
-displayDBZ(0);
+displayDBZ(4);
 
 // MODAL PART / POP UP "ADDED TO CART"
 

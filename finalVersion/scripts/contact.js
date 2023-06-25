@@ -10,7 +10,6 @@ let messageInput = document.querySelector('#message');
 let success = document.querySelector('#success');
 let err = document.querySelectorAll('.err');
 
-
 function validateForm(){
 
     clearMessage();
@@ -83,6 +82,7 @@ function validateForm(){
 
     // MESSAGE SUCCESSFULLY SENT IF ERR VARIABLE IS FALSE
     // IF ERR VARIABLE IS TRUE, THE FORM IS NOT CORRECT
+    // if (errFlag == false)
     if (!errFlag) {
         success.innerText = "Message sent !";
     }

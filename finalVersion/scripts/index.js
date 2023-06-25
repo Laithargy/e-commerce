@@ -70,7 +70,7 @@ function scrollRight() {
     // SET STATEMENT TO TRUE
     isTransitioning = true;
 
-    // CLICK ON RIGHT ARROW
+    // CLICK ON RIGHT ARROW / SLIDER
     // CHANGE THE MAIN IMG BY THE NEXTIMG
     prevImg = mainImg;
     mainImg = nextImg;
@@ -125,6 +125,7 @@ document.getElementById("arrowLeft").addEventListener("click", scrollLeft);
 document.getElementById("slideRight").addEventListener("click", scrollRight);
 document.getElementById("slideLeft").addEventListener("click", scrollLeft);
 
+// DISPLAY THE SLIDER 
 loadGallery();
 
 
